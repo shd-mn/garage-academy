@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+}
+
+a {
+    text-decoration: none;
+    color: #385898;
+}
+
+.register {
+    width: 432px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgb(175, 175, 175);
+}
+
+.register-header {
+    position: relative;
+    padding: 10px 16px;
+    border-bottom: 1px solid rgb(218, 221, 225);
+}
+.register-header h1 {
+    margin-bottom: 4px;
+}
+.register-header p {
+    color: #606770;
+}
+
+.register-header button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    background: none;
+    border: none;
+}
+
+.register-header button svg {
+    display: inline-block;
+    width: 24px;
+    height:24px;
+}
+
+.register-form {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input {
+    padding: 11px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f5f6f7;
+    border: 0.8px solid rgb(204, 208, 213);
+}
+
+.fullname-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthday-box,
+.gender-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.birthday-box div,
+.gender-box div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    grid-column: 1/-1;
+}
+
+.birthday-box p,
+.gender-box p {
+    font-size: 12px;
+    color: #606770;
+}
+
+select {
+    border-radius: 5px;
+    padding: 11px;
+    border: 0.8px solid rgb(204, 208, 213);
+}
+
+option {
+    margin-bottom: 10px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    background: #606770;
+    border-radius: 50%;
+}
+.icon svg {
+    width: 10px;
+    height: 10px;
+    color: white;
+}
+
+.gender-box label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+    border-radius: 5px;
+    border: 0.8px solid rgb(204, 208, 213);
+}
+
+.register-info p {
+    font-size: 11px;
+    color: #777777;
+}
+.register-info > p {
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    align-self: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding: 8px 64px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background-color: #00a400;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(#79bc64, #578843);
+}
